@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<style>
+		
+		.top-bar {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			word-spacing: 3px;
+			width: 144%;
+		}
+		.topnav {
+			display: none; 
+		}
+		.menu-icon {
+			display: block;
+			cursor: pointer;
+		}
+		.menu-icon::before {
+			content: "\2630"; 
+			font-size: 20px;
+		}
+		.menu-icon.active ~ .topnav {
+			display: block; 
+		}
+		.topnav a {
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+			padding: 10px;
+			font-size: 20px;
+		}
+
+		body {
+			background-color: #9DB2BF;
+		}
+		.image-container {
+            display: flex;
+            justify-content: center;
+        }
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var menuIcon = document.querySelector('.menu-icon');
+			
+			menuIcon.addEventListener('click', function() {
+				menuIcon.classList.toggle('active');
+			});
+		});
+	</script>
+</head>
+
+
+<body>
+	<div class="top-bar">
+		<h1><font face="Courier New">Auslandssemester</font></h1>
+		<div class="menu-icon"></div>
+		<div class="topnav">
+		
+            <a class="active" href="./Schweden">SCHWEDEN</a>
+            <a class="active" href="./Südkorea">SÜDKOREA</a>
+            <a class="active" href="./ÜBER_UNS.html">ÜBER UNS</a>
+			<a class="active" href="./Kontakt">KONTAKT</a>
+	
+
+		</div>
+	</div>
+	
+
+	<p align="center">
+		Moin und herzlich willkommen!
+		Wir sind Leon & Sören und wollen euch über unsere Erfahrungen aus dem Auslandssemester mit Erasmus informieren.
+		Wir studieren beide an der Friedrich-Schiller-Universität und haben einige nützliche Informationen sammeln können,die wir hier gerne mit euch teilen möchten. Wenn du uns zunächst näher kennenlernen möchtest,
+		 einfach <a href="ÜBER_UNS.html">hier</a> klicken.
+		klicken. klicken.
+		Für Informationen zum jeweiligen Gastland, klicke einfach auf die gewünschte Flagge.
+		
+		Wir wünschen dir viel Spaß auf unserem Blog und hoffen dir ein wenig Inspiration geben zu können.
+	</p>
+
+	
+
+	<a href="../Südkorea"><img src="../Südkorea.jpg" alt="Südkorea" width="200" height="110" style="position:absolute; top: 400px; left: 500px"</a>
+	<a href="../Schweden"><img src="../Schweden.jpg" alt="Schweden" width="200" height=110" style="position:absolute; top: 400px; left: 150px " </a>
+
+	</div>
+
+</body>
+</html>
